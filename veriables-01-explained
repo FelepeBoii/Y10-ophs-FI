@@ -1,0 +1,11 @@
+#veriables
+
+name = "Filip"
+#this is a variable
+#the veriable is called "name"
+#the veriable called name
+#contains some data
+
+print(name)
+
+
