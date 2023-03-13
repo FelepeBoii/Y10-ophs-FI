@@ -1,0 +1,27 @@
+#variables02
+
+name1 = "Filip"
+name2 = "dave"
+name3 = "george floyd"
+name4 = "kamari M"
+name5 = "ben dover"
+
+print(name5)
+print(name4)
+print(name3)
+print(name2)
+print(name1)
+
+print("")
+
+town1 = "thorton heath"
+town2 = "norbury"
+town3 = "crawley"
+town4 = "bromley"
+town5 = "brighton"
+
+print(town1)
+print(town2)
+print(town3)
+print(town4)
+print(town5)
