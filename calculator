@@ -1,0 +1,61 @@
+def adding (num1,num2) :
+  total = num1 +num2
+  print("\n----------------------\n")
+  print(num1,"+",num2,"=",total)
+  print("\n----------------------")
+  
+def subtraction (num1,num2) :
+  total = num1 +num2
+  print("\n----------------------\n")
+  print(num1,"-",num2,"=",total)
+  print("\n----------------------")
+
+def multiply (num1,num2) :
+  total = num1 * num2
+  print("\n----------------------\n")
+  print(num1,"x",num2,"=",total)
+  print("\n----------------------")
+  
+def division (num1, num2) :
+  total = num1 / num2
+  print("\n----------------------\n")
+  print(num1,"/",num2,"=",total)
+  print("\n----------------------")
+
+
+def menu():
+  print("1 for add")
+  print("2 for subtract")
+  print("3 for multiply")
+  print("4 for divide")
+  select = int(input("1,2 , 3 or 4?"))
+  
+  if select == 1:
+    num1 = int(input("enter a num:"))
+    num2 = int(input("enter another num:"))
+    adding(num1, num2)
+    menu()
+    
+  elif select == 2:
+    num1 =int(input("enter a num:"))
+    num2 = int(input("enter another num:"))
+    subtraction(num1, num2)
+    menu()
+    
+  elif select == 3:
+    num1 =int(input("enter a num:"))
+    num2 = int(input("enter another num:"))
+    multiply(num1, num2)
+    menu()
+    
+  elif select == 4:
+    num1 =int(input("enter a num:"))
+    num2 = int(input("enter another num:"))
+    division(num1, num2)
+    menu()
+  else:
+    print("\n----------------------\n")
+    print("{invalid choice, try again}")
+    print("\n----------------------\n")
+    menu()
+menu()
