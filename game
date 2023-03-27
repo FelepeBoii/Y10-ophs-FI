@@ -1,0 +1,17 @@
+def game():
+  choice = str(input("wanna do a riddle to make you happyer\nor pass the time"))
+  if choice == "no":
+    print("then go away!!!")
+    print("\n \n")
+    print("please reset the code")
+  else:
+    str(input("how many Mr spreos do you need to fix a lightbulb?"))
+    print("none, they are codeing a robot to do it for them")
+
+
+
+feeling = str(input("are you happy???"))
+if feeling == "yes":
+  print("good im glad youre happy")
+else:
+  game()
