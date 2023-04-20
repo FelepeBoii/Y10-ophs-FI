@@ -1,0 +1,5 @@
+age = 21
+
+if age >=18:
+  print("yay, you are old enough to vote")
+  
