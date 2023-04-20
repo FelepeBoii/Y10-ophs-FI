@@ -1,0 +1,27 @@
+#this is a comment
+#veriables vs constants
+#veriables are decalred in titlecase
+#CONSTANT are declared in CAPITALS
+
+#example of veriable
+
+Team1Name = "spero's stars"
+Team2Name = "Croydon kebabs"
+
+#veriables have a usefu; name
+#veriabls store a value (can change)
+#veriables can not start with a number
+#e.g. 1Teamname = "Croydon kebabs"
+#this will cause a syntax error
+
+#veriable cannot ghave a space in the name
+#eg. Team Name = "Croydon kebabs"
+#tyhis will be a syntax error
+#Veriables all start with capitals!!!!!!]
+
+#this is an examplew of a CONSTANT
+FREETHROW = 1
+TWOPOINTER = 2
+THREEPOINTER = 3
+
+#The valuise is a CONSTANT do NOT change
