@@ -1,0 +1,4 @@
+awnser = 0
+while awnser <= 50:
+  number = (int(input("enter a number")))
+  
