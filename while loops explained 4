@@ -1,0 +1,9 @@
+import sys
+
+awnserOK = False
+while awnserOK == False:
+  awnser = input("Exit? Y or N").upper()
+  if awnser == "Y":
+    awnserOK = True
+
+exit(sys)
