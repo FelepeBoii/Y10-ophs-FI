@@ -1,0 +1,6 @@
+cars = input("enter the first car name")
+cars1 = input("enter the second car name")
+cars2 = input("enter the third car name")
+
+finish = [cars,cars1,cars2]
+print(finish)
