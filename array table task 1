@@ -1,0 +1,5 @@
+student = ["Filip","Chazza","Goggy","Regano","Joely"]
+
+student.insert(0,"plam")
+student.append("jupp")
+print(student)
