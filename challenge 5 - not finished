@@ -1,0 +1,8 @@
+coupon = 50
+
+val = int(input("Please enter a number"))
+count = 1
+while val <= 50:
+  print("too low, try again")
+while val > 50:
+  print("too high, try again")
