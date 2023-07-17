@@ -1,0 +1,11 @@
+#get the user to enter their name and a number
+
+name = str(input("input name pls>>>>"))
+num1 = int(input("put a num pls >>>>"))
+
+#create a range for the number that they input and the name too.
+
+for x in range(num1):
+  print(name)
+  
+#print the result
