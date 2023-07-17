@@ -1,0 +1,9 @@
+# create the veriable and ask for the name as an input.
+
+name = str(input("enter ur name pls>>>>>"))
+
+#then create a range to be used for the amount of times the result is printed.
+for x in range(3):
+  print(name)
+  
+#print the result.
