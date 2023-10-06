@@ -1,0 +1,23 @@
+ball_pit_radius = int(input(" > please enter the radius of the ball pit, thanks -"))
+ball_pit_height = int(input(" > pls also gimme the height of the ball pit, gracias. -"))
+ball_radius = int(input(" > can i now pls have the radius of one of the singular balls, merci. -"))
+packing_density = 0.75
+def ball_volume(ball_radius):
+    pi = 3.14
+    return (4 / 3) * pi * (ball_radius * ball_radius * ball_radius)
+
+
+def ball_pit_volume(ball_pit_radius, ball_pit_height):
+    pi = 3.14
+    return pi * (ball_pit_radius * ball_pit_radius) * ball_pit_height
+
+print("\n\n-------------------------------------------------------")
+balls = (ball_pit_volume(ball_pit_radius, ball_pit_height) / ball_volume(ball_radius)) * packing_density
+print(": You need", balls, "balls to fill the ball pit.")
+print("-------------------------------------------------------")
+if balls == 69:
+  print(" :)")
+if balls < 100:
+  print(">bruh. Thats cheap man\n \n>You can afford that right???")
+if balls > 100:
+  print(">DAYYYYM thats allot of balls icl ._.")
