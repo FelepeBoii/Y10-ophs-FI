@@ -4,9 +4,9 @@ def carp_cost(width, length, price):
     fitting = 50
     return carpet + grippers + fitting
 
-width = int(input("> Enter the width of the room to nearest meter pls - "))
-length = int(input("> Enter the length of the room to nearest meter (again pls) -  "))
-price = float(input("> Enter the price of the carpet per m2 (finally pls :) ) -  "))
+width = int(input("> Enter the width of the space where you want your carpet to be to the nearest meter pls - "))
+length = int(input("> Enter the length of the space where you want your carpet to be to  the nearest meter (again pls) -  "))
+price = 6.5
 print("\n\n----------------------------------------------------------------\ntotal: £", carp_cost(width, length, price))
 print("----------------------------------------------------------------\n> cash or card?")
 
