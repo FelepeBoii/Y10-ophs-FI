@@ -1,0 +1,13 @@
+def work():
+  ans1 = a+b
+  ans = ans1*c
+  print("youre awnser is",ans)
+
+a = int(input("> please enter a number"))
+b = int(input("> please enter another number"))
+c = int(input("> please enter one last number"))
+print("\n~---------------------~\n")
+
+work()
+
+print(" :) ")
