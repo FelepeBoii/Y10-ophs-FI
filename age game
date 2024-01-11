@@ -1,0 +1,8 @@
+def name():
+  nam = str(input("> please enter your name"))
+  age = int(input("> please enter your age"))
+  pr = 1+age
+  print("\n#---~--------~---#\n")
+  print("WOW",nam,"youre gonna be",age,"soon!")
+
+name()
