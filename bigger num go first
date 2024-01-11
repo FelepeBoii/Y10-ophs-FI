@@ -1,0 +1,11 @@
+def now():
+  if a > b:
+    print(a,"\n",b)
+  else:
+    print(b,"\n",a)
+
+
+a = int(input("> please enter a number"))
+b = int(input("> please enter another number"))
+
+now()
