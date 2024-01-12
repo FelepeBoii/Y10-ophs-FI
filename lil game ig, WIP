@@ -1,0 +1,65 @@
+from threading import Event
+import time
+
+
+print("WELCOME!!!!!")
+
+Event().wait(1)
+print("#-------------~~~__~~~----------#\n\n[stranger texting site :)\n\n#--------___~~~___~~~___--------#")
+Event().wait(2)
+name = str(input("name:\n>"))
+
+print("Loading...")
+
+Event().wait(2)
+
+
+print("{other user found, joining chatroom}")
+
+Event().wait(1)
+
+
+
+print("[stranger]\n> hello, how are you???")
+
+Event().wait(5) 
+
+
+a = (str(input("[you]\n>")))
+Event().wait(6)
+print("[stranger]\n>well, kinda alright, stuff happened")
+
+Event().wait(3)
+
+print("[stranger]\n>But that will come later")
+
+Event().wait(2)
+
+print("[stranger]\n>for now")
+
+Event().wait(2)
+
+print("[stranger]\n>lets talk about...")
+
+Event().wait(2)
+
+print("[stranger]\nyou...")
+
+Event().wait(3)
+
+print("[stranger]\n> I know who you are",name)
+
+Event().wait(6)
+
+print("[stranger]\n> See You Soon...")
+
+Event().wait(3)
+
+print("{user disconnected}")
+
+
+Event().wait(10)
+
+print("\n\n~----Thanks for playing!!! this is a work in progress :)----~\n\n")
+
+
