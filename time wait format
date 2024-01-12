@@ -1,0 +1,12 @@
+from threading import Event
+
+
+print("> this code is really slow, please wait a bout half a minute...")
+
+
+def display():
+  print("> All done, thanks for your patience")
+
+
+Event().wait(30) 
+display()
