@@ -1,0 +1,8 @@
+def price():
+  a = int(input("> what was the total price of the bill?"))
+  b = int(input("> now, how many diners are there?"))
+  ans = a/b
+  print("\n#~-----------------~-~-~------------------#")
+  print("\n> you must all evenly pay a total of:",ans)
+  
+price()
