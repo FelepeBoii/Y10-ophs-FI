@@ -1,1 +1,8 @@
 https://trinket.io/python3/c8d13c2248
+
+
+file = open("quick.txt","r") 
+#you can just change its name from "quick.txt" to "numbers.txt" etc...
+quicktext = file.read()
+
+print(quicktext)
