@@ -1,0 +1,23 @@
+from threading import Event
+import time
+
+print("> Please wait...")
+Event().wait(1)
+
+print(" \n\n\n   ~       ...     Loading       ...      ~\n")
+Event().wait(5) 
+
+def tome():
+  hour = int(input("\n> please enter [one] for conversion to hours\n  or [two] for conversion to minutes..."))
+  if hour == 1:
+    stu = int(input("\n> what number would you like to convert?"))
+    tim = stu/60
+    print("\n> you will have",tim,"minutes")
+  if hour ==2:
+    nom = int(input("\n> what number would you like to convert?"))
+    hor = nom*60
+    print("\n> you will have",hor,"hours")
+  if hour>2:
+    print("\n\n~~ERROR, TRY AGAIN~~")
+
+tome()
