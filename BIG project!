@@ -1,0 +1,97 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib import cm
+from threading import Event
+
+plt.style.use('_mpl-gallery')
+
+# Make data
+X = np.arange(-5, 7, 0.25)
+Y = np.arange(-4.5, 5, 0.25)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+# Plot the surface
+fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+ax.plot_surface(X, Y, Z, vmin=Z.min() * 2, cmap=cm.Blues)
+
+ax.set(xticklabels=[],
+       yticklabels=[],
+       zticklabels=[])
+
+
+# User Age Calculation
+from datetime import datetime
+
+# Get user's birth year and date
+birth_year = int(input(" >Enter your birth year: "))
+Event().wait(1)
+
+birth_month = int(input(" >Enter your birth month: "))
+Event().wait(1)
+
+birth_day = int(input(" >Enter your birth day: "))
+Event().wait(1)
+
+
+# Calculate current year, month, and day
+current_date = datetime.now()
+current_year = current_date.year
+current_month = current_date.month
+current_day = current_date.day
+
+# Calculate user's age
+age = current_year - birth_year
+
+# Adjust age if the current month and day before the birth month and day
+if current_month < birth_month or (current_month == birth_month and current_day < birth_day):
+    age -= 1
+
+# Calculate age in hours, minutes, and seconds
+age_hours = age * 365 * 24
+age_minutes = age_hours * 60
+age_seconds = age_minutes * 60
+
+# Convert birth date to coordinates
+birth_coordinates = (birth_year % 10, birth_month % 10, birth_day % 10)
+
+# Update graph coordinate variables
+X = np.arange(-5, 7, 0.25) + birth_coordinates[0]
+Y = np.arange(-4.5, 5, 0.25) + birth_coordinates[1]
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**2 + Y**2)
+Z = np.sin(R)
+
+# Plot the updated surface
+fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+ax.plot_surface(X, Y, Z, vmin=Z.min() * 2, cmap=cm.Blues)
+
+ax.set(xticklabels=[],
+       yticklabels=[],
+       zticklabels=[])
+
+Event().wait(3)
+
+print("\n\n ==> Here will be your age, as a  -3D-  graph!")
+Event().wait(3)
+
+print("\n\n-------------------------------------------")
+
+plt.show()
+Event().wait(3)
+print("\n\n-------------------------------------------\n")
+Event().wait(2)
+
+print("\n\n >also, here is your current age in:\n\n >years:\n   ","|",age,"|")
+Event().wait(1)
+
+print("\n\n >hours:\n   ","|",age_hours,"|")
+Event().wait(1)
+
+print("\n\n >minutes:\n   ","|",age_minutes,"|")
+Event().wait(2)
+
+print("\n\n >Seconds!:\n   ","|",age_seconds,"|""\n\n\n-------------------------------------------\n\n > And counting!")
+Event().wait(2)
+print("\n-------------------------------------------\n\n> Thank you...\n  Please come again.")
