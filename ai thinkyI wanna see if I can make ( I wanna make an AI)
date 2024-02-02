@@ -1,0 +1,42 @@
+import tensorflow as tf
+from tensorflow import keras
+
+# Load the dataset
+(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
+
+# Preprocess the data
+x_train = x_train / 255.0
+x_test = x_test / 255.0
+
+# Build the model
+model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28, 28)),
+    keras.layers.Dense(128, activation='relu'),
+    keras.layers.Dense(10, activation='softmax')
+])
+
+# Compile the model
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Train the model
+model.fit(x_train, y_train, epochs=10)
+
+# Evaluate the model
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print('Test accuracy:', test_acc)
+
+
+
+#This code generates an AI model using the TensorFlow library in Python. It uses the MNIST dataset, which consists of handwritten digits, to train a neural network model to recognize and classify digits.
+
+#The code first loads the dataset using the mnist.load_data() function from the keras.datasets module. It then preprocesses the data by scaling the pixel values to a range between 0 and 1.
+
+#Next, the model architecture is defined using the Sequential class from keras.models. The model consists of a flatten layer to convert the 2D image data into a 1D array, followed by a dense layer with 128 units and a ReLU activation function. The final layer is another dense layer with 10 units and a softmax activation function, which outputs the probability distribution over the 10 possible classes.
+
+#The model is compiled with the Adam optimizer and sparse categorical cross-entropy loss function. It is then trained on the training data using the fit method, specifying the number of epochs.
+
+#After training, the model is evaluated on the test data using the evaluate method, which returns the test loss and accuracy. The test accuracy is then printed to the console.
+
+#This code provides a basic example of how to generate an AI model in Python using TensorFlow.
